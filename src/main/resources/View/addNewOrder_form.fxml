@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-border-color: black;" styleClass="rounded-anchor-pane5" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.AddNewOrderFormController">
+   <children>
+      <Label layoutX="346.0" layoutY="9.0" prefHeight="39.0" prefWidth="318.0" styleClass="button-62" stylesheets="@../Style2/button.css" text="ADD New Order">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Label layoutX="42.0" layoutY="86.0" prefHeight="18.0" prefWidth="82.0" text="Order Id">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblOrderId" layoutX="159.0" layoutY="87.0" prefHeight="18.0" prefWidth="82.0" text="Order Id" />
+      <Label layoutX="403.0" layoutY="82.0" prefHeight="18.0" prefWidth="82.0" text="Date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="618.0" layoutY="83.0" prefHeight="18.0" prefWidth="82.0" text="Time" />
+      <Label fx:id="lblDate" layoutX="519.0" layoutY="83.0" prefHeight="18.0" prefWidth="82.0" text="Date" />
+      <Label fx:id="lblLocalTime" layoutX="718.0" layoutY="83.0" prefHeight="18.0" prefWidth="82.0" text="Time" />
+      <Label layoutX="42.0" layoutY="146.0" prefHeight="18.0" prefWidth="82.0" text="Customer Id">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="cmbCustomerId" layoutX="156.0" layoutY="142.0" onAction="#cmbCustomerIdOnAction" prefWidth="150.0" />
+      <Label layoutX="401.0" layoutY="144.0" prefHeight="20.0" prefWidth="122.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="209.0" prefHeight="38.0" prefWidth="124.0" styleClass="button-62" text="Materials">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="276.0" prefHeight="18.0" prefWidth="82.0" text="Material Id">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <JFXComboBox fx:id="cmbMaterialId" layoutX="118.0" layoutY="264.0" onAction="#cmbMaterialIdOnACtion" prefHeight="26.0" prefWidth="94.0" />
+      <Label layoutX="237.0" layoutY="276.0" prefHeight="20.0" prefWidth="100.0" text="Material Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="336.0" prefHeight="18.0" prefWidth="82.0" text="price">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="238.0" layoutY="334.0" prefHeight="18.0" prefWidth="82.0" text="Amount">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtAmount" layoutX="337.0" layoutY="328.0" prefHeight="26.0" prefWidth="116.0" />
+      <JFXButton layoutX="327.0" layoutY="388.0" onAction="#buttonAddAnotherOnAction" styleClass="button-63" text="+ Add another" />
+      <AnchorPane layoutX="459.0" layoutY="238.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="198.0" prefWidth="506.0" style="-fx-border-color: BLACK;" stylesheets="@../Style2/ScoralPane.css">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="242.0" prefWidth="534.0">
+                     <children>
+                        <TableView fx:id="tblMaterials" layoutX="-1.6" prefHeight="184.0" prefWidth="544.0" stylesheets="@../Style2/table2.css" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="colId" prefWidth="75.0" text="Material ID" />
+                            <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="C2" />
+                              <TableColumn fx:id="colName" prefWidth="106.39996337890625" text="Material Name" />
+                              <TableColumn fx:id="colPrice" prefWidth="89.60005187988281" text="Price" />
+                              <TableColumn fx:id="colAmount" prefWidth="98.400146484375" text="Amount" />
+                              <TableColumn fx:id="colAction" prefWidth="116.26666259765625" text="Action" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="22.0" layoutY="466.0" prefHeight="32.0" prefWidth="153.0" styleClass="button-62" text="Measurements">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="528.0" prefHeight="18.0" prefWidth="82.0" text="Walst">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="167.0" layoutY="528.0" prefHeight="18.0" prefWidth="82.0" text="Buslt">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="568.0" prefHeight="18.0" prefWidth="82.0" text="Hips">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="171.0" layoutY="568.0" prefHeight="18.0" prefWidth="82.0" text="Neck">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="346.0" layoutY="528.0" prefHeight="18.0" prefWidth="82.0" text="Inseam">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="345.0" layoutY="570.0" prefHeight="18.0" prefWidth="82.0" text="Sholder">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtWalst" layoutX="68.0" layoutY="522.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="txtHips" layoutX="68.0" layoutY="562.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="txtNeck" layoutX="218.0" layoutY="562.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="txtBuslt" layoutX="218.0" layoutY="521.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="txtInseam" layoutX="408.0" layoutY="523.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="txtSholder" layoutX="408.0" layoutY="563.0" prefHeight="26.0" prefWidth="80.0" />
+      <Label layoutX="526.0" layoutY="519.0" prefHeight="18.0" prefWidth="82.0" text="Description">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextArea fx:id="txtDescription" layoutX="620.0" layoutY="512.0" prefHeight="98.0" prefWidth="347.0" />
+      <Label layoutX="27.0" layoutY="638.0" prefHeight="18.0" prefWidth="82.0" text="Tailor Fees">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblTailorFees" layoutX="160.0" layoutY="638.0" prefHeight="18.0" prefWidth="82.0" text="Tailor Fees" />
+      <Label layoutX="254.0" layoutY="638.0" prefHeight="20.0" prefWidth="115.0" text="MATERIAL cost">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblMatrialCost" layoutX="395.0" layoutY="638.0" prefHeight="18.0" prefWidth="94.0" text="MATERIAL cost" />
+      <Label layoutX="47.0" layoutY="698.0" prefHeight="18.0" prefWidth="82.0" text="Total">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblTotal" layoutX="117.0" layoutY="698.0" prefHeight="18.0" prefWidth="82.0" text="Total" />
+      <JFXButton layoutX="500.0" layoutY="704.0" onAction="#btmCanselOnAction" prefHeight="26.0" prefWidth="103.0" styleClass="button-63" text="cansel" />
+      <JFXButton layoutX="647.0" layoutY="704.0" onAction="#btmAddOnAction" prefHeight="26.0" prefWidth="67.0" styleClass="button-63" text="Add" />
+      <JFXButton layoutX="760.0" layoutY="700.0" onAction="#btmGenarateInvoice" prefHeight="26.0" prefWidth="110.0" styleClass="button-63" text="Genaret Invoice" />
+      <Label fx:id="lblMaterialName" layoutX="355.0" layoutY="279.0" prefHeight="18.0" prefWidth="81.0" text="Material Name" />
+      <Label fx:id="lblMaterialPrice" layoutX="104.0" layoutY="339.0" prefHeight="18.0" prefWidth="82.0" text="price" />
+      <Label fx:id="lblCustomerName" layoutX="545.0" layoutY="147.0" prefHeight="18.0" prefWidth="103.0" text="Customer Name" />
+      <JFXButton layoutX="408.0" layoutY="598.0" onAction="#btmGenaraetOnAction" styleClass="button-63" text="Genarate" />
+      <Label fx:id="lblPaymentId" layoutX="267.0" layoutY="84.0" prefHeight="18.0" prefWidth="50.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Line endX="585.5333251953125" endY="7.62939453125E-6" layoutX="379.0" layoutY="58.0" startX="-351.0" startY="7.62939453125E-6" />
+      <Line endX="310.5999755859375" layoutX="111.0" layoutY="256.0" startX="-100.0" />
+      <Line endX="310.5999755859375" layoutX="121.0" layoutY="506.0" startX="-100.0" />
+   </children>
+   <stylesheets>
+      <URL value="@../Style2/button1.1.css" />
+      <URL value="@../Style2/anchorpane.css" />
+      <URL value="@../Style2/button.css" />
+   </stylesheets>
+</AnchorPane>

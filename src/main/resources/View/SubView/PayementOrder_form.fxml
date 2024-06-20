@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="616.0" styleClass="rounded-anchor-pane5" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.PaymentOrderFormController">
+   <children>
+      <Label layoutX="199.0" layoutY="6.0" prefHeight="18.0" prefWidth="198.0" styleClass="button-62" stylesheets="@../../Style2/button.css" text="ORDER PAYMENT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="86.0" text="Payement Id">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblPaymentId" layoutX="290.0" layoutY="88.0" prefHeight="18.0" prefWidth="88.0" text="pay" />
+      <Label layoutX="70.0" layoutY="124.0" text="Customer Id">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblCusId" layoutX="290.0" layoutY="130.0" prefHeight="18.0" prefWidth="88.0" text="Cus" />
+      <Label layoutX="70.0" layoutY="170.0" text="Customer name">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblName" layoutX="290.0" layoutY="172.0" prefHeight="18.0" prefWidth="88.0" text="Name" />
+      <Label layoutX="70.0" layoutY="212.0" prefHeight="18.0" prefWidth="88.0" text="Date">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="date" layoutX="290.0" layoutY="208.0" />
+      <Label layoutX="70.0" layoutY="256.0" prefHeight="18.0" prefWidth="88.0" text="BILL">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblamount" layoutX="290.0" layoutY="259.0" prefHeight="18.0" prefWidth="88.0" text="Amount" />
+      <Label layoutX="70.0" layoutY="290.0" prefHeight="18.0" prefWidth="88.0" text="NIC">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtNic" layoutX="290.0" layoutY="294.0" prefHeight="26.0" prefWidth="191.0" promptText="nic" />
+      <Label layoutX="70.0" layoutY="340.0" prefHeight="18.0" prefWidth="88.0" text="TYPE">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <JFXComboBox fx:id="comboType" layoutX="290.0" layoutY="340.0" prefHeight="26.0" prefWidth="191.0" />
+      <Label layoutX="70.0" layoutY="390.0" prefHeight="27.0" prefWidth="121.0" text="PAYMENT">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtPayemnt" layoutX="290.0" layoutY="390.0" prefHeight="26.0" prefWidth="191.0" promptText="payemnt" />
+      <JFXButton fx:id="btnCansel" layoutX="251.0" layoutY="522.0" onAction="#btnCanselOnAction" prefHeight="26.0" prefWidth="96.0" styleClass="button-63" text="Cansel" />
+      <JFXButton fx:id="btmUpdate" layoutX="363.0" layoutY="522.0" onAction="#btmUpdateOnAction" prefHeight="26.0" prefWidth="96.0" styleClass="button-63" text="UPDATE" />
+      <Label layoutX="66.0" layoutY="438.0" prefHeight="27.0" prefWidth="121.0" text="Customer Mail">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="289.0" layoutY="440.0" prefHeight="26.0" prefWidth="191.0" promptText="email" />
+      <JFXButton layoutX="121.0" layoutY="522.0" onAction="#btmSendBlll" prefHeight="26.0" prefWidth="96.0" styleClass="button-63" text="Send Bill" />
+   </children>
+   <stylesheets>
+      <URL value="@../../Style2/button1.1.css" />
+      <URL value="@../../Style2/anchorpane.css" />
+   </stylesheets>
+</AnchorPane>

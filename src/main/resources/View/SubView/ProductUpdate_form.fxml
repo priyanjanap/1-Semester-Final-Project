@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="606.0" prefWidth="1331" styleClass="shadowed-element1" stylesheets="@../../Style2/anchorpane.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.ProductUpdateFormController">
+   <children>
+      <AnchorPane layoutX="18.0" layoutY="37.0" prefHeight="538.0" prefWidth="1294.0" styleClass="rounded-anchor-pane3" stylesheets="@../../Style2/anchorpane.css">
+         <children>
+            <Label layoutX="462.0" layoutY="11.0" prefHeight="32.0" prefWidth="389.0" styleClass="button-62" stylesheets="@../../Style2/button.css" text="Product Update Form">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="105.0" prefHeight="18.0" prefWidth="114.0" text="Product ID">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtProductId" layoutX="165.0" layoutY="106.0" prefHeight="26.0" prefWidth="248.0" />
+            <Label layoutX="457.0" layoutY="105.0" prefHeight="18.0" prefWidth="114.0" text="Product Name">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="605.0" layoutY="107.0" prefHeight="26.0" prefWidth="248.0" />
+            <Label layoutX="898.0" layoutY="105.0" prefHeight="18.0" prefWidth="114.0" text="Description">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDescription" layoutX="1026.0" layoutY="106.0" prefHeight="26.0" prefWidth="248.0" />
+            <Label layoutX="28.0" layoutY="205.0" prefHeight="26.0" prefWidth="126.0" text=" Quantity">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQuantity" layoutX="166.0" layoutY="206.0" prefHeight="26.0" prefWidth="248.0" />
+            <JFXButton fx:id="btmCansel" layoutX="502.0" layoutY="355.0" onAction="#btmCanselOnAction" prefHeight="26.0" prefWidth="114.0" text="Cansel" />
+            <JFXButton fx:id="btmUpdate" layoutX="782.0" layoutY="355.0" onAction="#btmUpdateOnAction" prefHeight="26.0" prefWidth="114.0" text="Update" />
+            <JFXButton fx:id="btmDelete" layoutX="632.0" layoutY="355.0" onAction="#btmDeleteOnAction" prefHeight="26.0" prefWidth="114.0" text="Delete" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="477.0" layoutY="235.0" prefHeight="18.0" prefWidth="114.0" text="Product Price">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPrice" layoutX="615.0" layoutY="236.0" prefHeight="26.0" prefWidth="248.0" />
+      <Label layoutX="917.0" layoutY="235.0" prefHeight="18.0" prefWidth="114.0" text="Product Type">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtType" layoutX="1055.0" layoutY="236.0" prefHeight="26.0" prefWidth="248.0" />
+      <Label layoutX="47.0" layoutY="345.0" prefHeight="18.0" prefWidth="114.0" text="Category">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCategoray" layoutX="185.0" layoutY="346.0" prefHeight="26.0" prefWidth="248.0" />
+   </children>
+</AnchorPane>

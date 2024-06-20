@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="793.0" prefWidth="1334.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.OrdersFormController">
+   <children>
+      <AnchorPane layoutX="38.0" layoutY="230.0" prefHeight="515.0" prefWidth="1274.0">
+         <children>
+            <ScrollPane layoutX="-6.0" layoutY="-8.0" prefHeight="556.0" prefWidth="1282.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="696.0" prefWidth="1355.0">
+                     <children>
+                        <TableView fx:id="tblOrder" layoutX="-8.0" layoutY="-1.0" prefHeight="553.0" prefWidth="1306.0" stylesheets="@../Style2/table.css">
+                           <columns>
+                              <TableColumn fx:id="colOrderId" prefWidth="112.79998683929443" text="ORDERID" />
+                              <TableColumn fx:id="colCusId" minWidth="3.19989013671875" prefWidth="127.99999237060547" text="CustomerID" />
+                              <TableColumn fx:id="colCusName" minWidth="3.19989013671875" prefWidth="127.99999237060547" text="Customer Name" />
+                              <TableColumn fx:id="colDate" minWidth="3.19989013671875" prefWidth="127.99999237060547" text="Date" />
+                              <TableColumn fx:id="colRetunDate" minWidth="3.19989013671875" prefWidth="127.99999237060547" text="CONTACT NUMBER" />
+                              <TableColumn fx:id="colViewDitals" minWidth="3.19989013671875" prefWidth="166.933349609375" text="VIEW" />
+                              <TableColumn fx:id="colFinished" minWidth="3.19989013671875" prefWidth="166.933349609375" text="FINISHED" />
+                              <TableColumn fx:id="colhandOver" minWidth="3.19989013671875" prefWidth="166.933349609375" text="HAND OVER" />
+                              <TableColumn fx:id="colAction" minWidth="3.19989013671875" prefWidth="166.933349609375" text="ACTION" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="28.0" layoutY="43.0" prefHeight="158.0" prefWidth="1277.0" style="-fx-background-radius: 15;" styleClass="rounded-anchor-pane3" stylesheets="@../Style2/anchorpane.css">
+         <children>
+            <Label fx:id="lblupcoming" layoutX="523.0" layoutY="62.0" prefHeight="30.0" prefWidth="86.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="36.0" layoutY="122.0" prefHeight="30.0" prefWidth="290.0" text="Number OF order Count">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+      <Label fx:id="lblOrderCount" layoutX="337.0" layoutY="118.0" prefHeight="36.0" prefWidth="111.0" text="Label">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

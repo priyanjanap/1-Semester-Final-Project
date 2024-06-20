@@ -1,0 +1,85 @@
+.Side_anchorPane{
+    -fx-background-color: linear-gradient(to bottom right,#0014FF,#0014FF, #ADD8E6 50%, #0014FF);
+
+    -fx-border-color: black;
+    -fx-border-width: 2px,2px,2px,2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 6, 0, 0, 0);}
+
+.radius {
+}
+
+.White-bag {
+    -fx-background-color: #fff;
+    -fx-background-radius: 9px;
+}
+
+.DailyRevenue {
+    -fx-background-color: #FF0A6C;
+    -fx-background-radius: 20px;
+}
+
+.text {
+}
+
+.styled-button{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 6, 0, 0, 0);
+-fx-background-color: blue;
+-fx-background-radius: 70px;
+    -fx-text-fill: white;
+}
+
+.productSold {
+    -fx-background-color: #FFE53B;
+    -fx-background-radius: 20px;
+
+}
+
+.orrdersToDay {
+    -fx-background-color: #FF2CDF;
+    -fx-background-radius: 20px;
+
+}
+.monthlyRevenue{
+    -fx-background-color: #00f260;
+    -fx-background-radius: 20px;
+
+}
+.mainAnchorePane{
+    -fx-border-width: 2px,2px,2px,2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+
+}
+.mainAnchorePane2{
+    -fx-background-color:   #D3D3D3 50%;
+
+
+}
+.top-bar{
+    -fx-border-color: #000;
+    -fx-background-color: #ffff;
+    -fx-border-style: 4px,4px,2px,4px;
+    -fx-border-radius: 20px;
+
+}
+.nav-from{
+
+}
+.pane{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+
+}
+.pane2{
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 6, 0, 0, 0);
+
+
+}

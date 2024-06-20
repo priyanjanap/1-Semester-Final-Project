@@ -1,0 +1,37 @@
+.alert {
+    -fx-background-color: #f0f0f0;
+}
+
+.alert .dialog-pane {
+    -fx-border-color: #333333;
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff;
+}
+
+.alert .dialog-pane .header-panel {
+    -fx-background-color: transparent;
+}
+
+.alert .dialog-pane .content {
+    -fx-padding: 20px;
+}
+
+.alert .dialog-pane .button-bar {
+    -fx-background-color: transparent;
+}
+
+.alert .dialog-pane .button-bar .button {
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff;
+}
+
+
+.alert .dialog-pane .content .qr-image {
+    -fx-padding: 20px;
+}
+
+.alert .dialog-pane .content .qr-image .image-view {
+    -fx-border-color: #333333; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+}

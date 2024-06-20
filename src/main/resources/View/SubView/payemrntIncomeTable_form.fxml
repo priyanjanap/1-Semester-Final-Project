@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="514.0" prefWidth="1298.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.PayemrntIncomeTableFormController">
+   <children>
+      <ScrollPane prefHeight="520.0" prefWidth="1294.0" stylesheets="@../../Style2/ScoralPane.css">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="577.0" prefWidth="1431.0">
+               <children>
+                  <TableView fx:id="tblPayment" layoutX="-6.0" layoutY="2.0" prefHeight="510.0" prefWidth="1438.0" stylesheets="@../../Style2/table.css">
+                     <columns>
+                        <TableColumn fx:id="colPID" prefWidth="117.06669902801514" text="PAYMENT ID" />
+                        <TableColumn fx:id="colCID" prefWidth="133.59991455078125" text="CUSTOMER ID" />
+                        <TableColumn fx:id="colCName" prefWidth="223.1999969482422" text="CUSTOMER NAME" />
+                        <TableColumn fx:id="colDate" prefWidth="178.13333129882812" text="DATE" />
+                        <TableColumn fx:id="colType" prefWidth="181.60003662109375" text="TYPE" />
+                        <TableColumn fx:id="colAmount" prefWidth="221.3333740234375" text="AMOUNT" />
+                        <TableColumn fx:id="colAction" prefWidth="268.2666015625" text="ACTION" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

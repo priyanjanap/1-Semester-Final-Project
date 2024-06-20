@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="payment2Anchor" prefHeight="166.0" prefWidth="266.0" style="-fx-background-color: #6D214F; -fx-background-radius: 16;" stylesheets="@../../Style2/button1.1.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.MakePayment2FormControllerController">
+   <children>
+      <JFXButton fx:id="rental" layoutX="68.0" layoutY="37.0" onAction="#rentalClick" prefHeight="26.0" prefWidth="116.0" styleClass="button-63" text="Rental" />
+      <JFXButton fx:id="orders" layoutX="69.0" layoutY="93.0" onAction="#ordersClick" prefHeight="26.0" prefWidth="116.0" styleClass="button-63" text="Orders" />
+      <ImageView fx:id="colseImage" fitHeight="19.0" fitWidth="19.0" layoutX="234.0" layoutY="5.0" onMouseClicked="#onCanselIconCLick">
+         <image>
+            <Image url="@../../Style/img_4.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

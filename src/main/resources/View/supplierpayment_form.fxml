@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="640.0" prefWidth="722.0" styleClass="rounded-anchor-pane5" stylesheets="@../Style2/anchorpane.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.SupplierPaymentFormController">
+   <children>
+      <AnchorPane layoutX="74.0" layoutY="21.0" prefHeight="554.0" prefWidth="580.0" styleClass="rounded-anchor-pane4">
+         <children>
+            <Label layoutX="193.0" layoutY="18.0" prefHeight="18.0" prefWidth="220.0" styleClass="button-63" text="SUPPLIER PAYMENT FORM" />
+            <Label layoutX="115.0" layoutY="116.0" prefHeight="18.0" prefWidth="106.0" text="Payemnt ID">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPayid" layoutX="300.0" layoutY="114.0" prefHeight="18.0" prefWidth="158.0" text="Payemnt ID" />
+            <Label layoutX="117.0" layoutY="155.0" prefHeight="18.0" prefWidth="106.0" text="SUPPLIER ID">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="comboID" layoutX="300.0" layoutY="145.0" onAction="#comboIDOnAction" prefHeight="26.0" prefWidth="158.0" />
+            <Label layoutX="117.0" layoutY="195.0" prefHeight="22.0" prefWidth="128.0" text="SUPPLIER NAME">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblname" layoutX="300.0" layoutY="195.0" prefHeight="18.0" prefWidth="158.0" text="SUPPLIER NAME" />
+            <DatePicker fx:id="Datepicker" layoutX="300.0" layoutY="227.0" prefHeight="26.0" prefWidth="158.0" />
+            <Label layoutX="117.0" layoutY="232.0" prefHeight="18.0" prefWidth="106.0" text="DATE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="282.0" prefHeight="18.0" prefWidth="106.0" text="AMOUNT">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAmount" layoutX="300.0" layoutY="287.0" prefHeight="26.0" prefWidth="158.0" promptText="amount" />
+            <JFXButton layoutX="165.0" layoutY="394.0" onAction="#canselAction" prefHeight="26.0" prefWidth="142.0" styleClass="button-63" stylesheets="@../Style2/button.css" text="Cansel" />
+            <JFXButton layoutX="325.0" layoutY="394.0" onAction="#saveAction" prefHeight="26.0" prefWidth="142.0" styleClass="button-63" stylesheets="@../Style2/button.css" text="Save" />
+         </children>
+         <stylesheets>
+            <URL value="@../Style2/button1.1.css" />
+            <URL value="@../Style2/anchorpane.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

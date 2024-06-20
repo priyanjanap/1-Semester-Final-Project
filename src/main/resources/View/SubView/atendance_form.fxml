@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.AtendanceFormController">
+   <children>
+      <Pane layoutX="33.0" layoutY="14.0" prefHeight="719.0" prefWidth="1150.0" style="-fx-background-color: rgba(255, 255, 255, 1);" styleClass="pane" stylesheets="@../../Style2/dashboard.css">
+         <children>
+            <Label alignment="CENTER" layoutX="338.0" layoutY="24.0" prefHeight="36.0" prefWidth="449.0" styleClass="styled-button" stylesheets="@../../Style2/alret.css" text="EMPLOYEE ATTENDANCE ">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Line endX="1015.4000244140625" endY="7.62939453125E-6" layoutX="135.0" layoutY="100.0" startX="-134.99998474121094" startY="7.62939453125E-6" />
+            <JFXButton fx:id="btmCansel" layoutX="201.0" layoutY="549.0" onAction="#btmCanseOnAction" prefHeight="34.0" prefWidth="113.0" style="-fx-background-color: #d63031; -fx-background-radius: 15;" text="cansel" textFill="#f4f0f0">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ScrollPane layoutX="515.0" layoutY="146.0" prefHeight="552.0" prefWidth="650.0" stylesheets="@../../Style2/ScoralPane.css">
+         <content>
+            <AnchorPane prefHeight="759.0" prefWidth="731.0">
+               <children>
+                  <TableView fx:id="tblEmployeeAttendance" layoutX="2.0" layoutY="3.0" prefHeight="566.0" prefWidth="731.0" style="-fx-border-color: black;" stylesheets="@../../Style2/table2.css">
+                    <columns>
+                      <TableColumn fx:id="colID" prefWidth="125.59997272491455" text="ID" />
+                      <TableColumn fx:id="ColEmployeeId" prefWidth="118.4000244140625" text="Employee Id" />
+                        <TableColumn fx:id="colDate" prefWidth="137.59999084472656" text="Attendance Date" />
+                        <TableColumn fx:id="colStatus" minWidth="5.86663818359375" prefWidth="132.79986572265625" text="Status" />
+                        <TableColumn fx:id="colPunStatus" minWidth="6.933349609375" prefWidth="157.599853515625" text="Punctuality Status" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="txtEmployeeId" layoutX="198.0" layoutY="187.0" prefHeight="26.0" prefWidth="240.0" />
+      <DatePicker fx:id="AttendanceDate" layoutX="198.0" layoutY="285.0" prefHeight="26.0" prefWidth="240.0" />
+      <ChoiceBox fx:id="StatsuChoiceBox" layoutX="198.0" layoutY="346.0" prefHeight="26.0" prefWidth="240.0" />
+      <ChoiceBox fx:id="punStatusChoiceBox" layoutX="198.0" layoutY="406.0" prefHeight="26.0" prefWidth="240.0" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="191.0" prefHeight="18.0" prefWidth="118.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="Employee ID" textFill="#230303" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="291.0" prefHeight="18.0" prefWidth="118.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="attendance_date" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="353.0" prefHeight="18.0" prefWidth="118.0" style="-fx-border-radius: 10; -fx-border-color: black;" text="attendance_status" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="410.0" prefHeight="18.0" prefWidth="118.0" style="-fx-border-radius: 10; -fx-border-color: black;" text="punctuality_status" />
+      <JFXButton fx:id="btmScanner" layoutX="97.0" layoutY="564.0" onAction="#btmScannerOnAction" prefHeight="34.0" prefWidth="114.0" style="-fx-background-radius: 15;" styleClass="Ancorpane2" stylesheets="@../../Style2/style.css" text="Scanner" textFill="#f2ecec">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btmUpdate" layoutX="373.0" layoutY="563.0" onAction="#btmUpdateOnAction" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: #3ae374; -fx-background-radius: 15;" text="Update" textFill="#efeded">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></JFXButton>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="240.0" prefHeight="18.0" prefWidth="119.0" style="-fx-border-radius: 10; -fx-border-color: black;" text="Employee Name" />
+      <TextField fx:id="txtEmployeeName" layoutX="198.0" layoutY="236.0" prefHeight="26.0" prefWidth="240.0" />
+   </children>
+</AnchorPane>

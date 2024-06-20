@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="603.0" prefWidth="813.0" styleClass="Ancorpane3" stylesheets="@../../Style2/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.EmailSender">
+   <children>
+      <Pane layoutX="77.0" layoutY="80.0" prefHeight="470.0" prefWidth="666.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+              <HBox layoutX="51.0" layoutY="199.0" prefHeight="26.0" prefWidth="385.0" spacing="10">
+                  <children>
+                      <TextField fx:id="recipientField" prefHeight="26.0" prefWidth="239.0" promptText="email" />
+                      <Button fx:id="chooseFileButton" onAction="#chooseFile" styleClass="Ancorpane" text="Choose File" />
+                      <Button fx:id="sendButton" onAction="#sendEmail" styleClass="Ancorpane" text="Send" />
+                  </children>
+              </HBox>
+            <Label alignment="CENTER" layoutX="189.0" layoutY="12.0" prefHeight="17.0" prefWidth="262.0" style="-fx-background-radius: 18;" styleClass="Ancorpane2" text=" QR SENDER" textFill="#faefef">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="162.0" prefHeight="17.0" prefWidth="231.0" text="ENTER THE EMAIL">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="565.4000244140625" endY="1.52587890625E-5" layoutX="101.0" layoutY="90.0" startX="-100.0" strokeWidth="3.0" />
+         </children>
+      </Pane>
+      <VBox />
+   </children>
+</AnchorPane>

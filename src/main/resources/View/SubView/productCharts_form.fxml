@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-border-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.ProductChartsFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="254.0" layoutY="28.0" prefHeight="30.0" prefWidth="253.0" style="-fx-background-color: #001B4B;" text="Product Charts" textFill="#efeaea">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="chart" layoutX="19.0" layoutY="91.0" prefHeight="477.0" prefWidth="774.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

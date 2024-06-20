@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="334.0" prefWidth="471.0" stylesheets="@../Style2/anchorpane1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.adminVrifyformController">
+    <children>
+        <Label layoutX="24.0" layoutY="37.0" style="-fx-background-radius: 15;" styleClass="circular-anchor-pane" stylesheets="@../Style2/anchorpane.css" text="Verificate to Continue:" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="309.0" layoutY="13.0" style="-fx-background-radius: 15;" styleClass="button-62" stylesheets="@../Style2/button.css" text="Only admin can Add" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="adminname" layoutX="41.0" layoutY="110.0" onKeyPressed="#onaddEnterUserName" prefHeight="31.0" prefWidth="366.0" promptText="Enter admin username" />
+        <PasswordField fx:id="adminpassword" layoutX="41.0" layoutY="169.0" onKeyPressed="#onaddEnterPassword" prefHeight="31.0" prefWidth="366.0" promptText="Enter admin password" />
+        <JFXButton fx:id="okButton" buttonType="RAISED" layoutX="369.0" layoutY="281.0" onAction="#onOkClick" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: rgba(5, 75, 180, 1);" text="Enter" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="canselButton" buttonType="RAISED" layoutX="276.0" layoutY="280.0" onAction="#oncanselClick" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: rgba(175, 108, 108, 1);" text="Cansel" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+    </children>
+   <styleClass>
+      <String fx:value="shadowed-element" />
+      <String fx:value="gradient-button1" />
+      <String fx:value="gradient-button" />
+   </styleClass>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="759.0" prefWidth="1381.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.ProductFormController">
+   <children>
+      <Pane layoutX="10.0" layoutY="11.0" prefHeight="170.0" prefWidth="1334.0" style="-fx-background-color: rgba(255, 255, 255, 1); -fx-background-radius: 13;">
+         <children>
+            <Label fx:id="lblProductCount" layoutX="1166.0" layoutY="96.0" prefHeight="56.0" prefWidth="72.0" textFill="#faf2f2" />
+            <JFXButton layoutX="198.0" layoutY="100.0" onAction="#btmChartsOnAction" prefHeight="58.0" prefWidth="183.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 15;" styleClass="button-63" stylesheets="@../Style2/button.css" text="Charts" textFill="#fff7f7">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="416.0" layoutY="101.0" onAction="#btmAddNewProductOnAction" prefHeight="56.0" prefWidth="205.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 15;" styleClass="button-63" stylesheets="@../Style2/button.css" text="Add New Product" textFill="#faf0f0">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="898.0" layoutY="95.0" prefHeight="58.0" prefWidth="234.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 15;" text="Num OF Products " textFill="#fff7f7">
+               <font>
+                  <Font name="Arial Black" size="23.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btmUpdate" layoutX="8.0" layoutY="101.0" onAction="#btmUpdateOnAction" prefHeight="56.0" prefWidth="159.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 14;" styleClass="button-63" stylesheets="@../Style2/button.css" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="anchorPaneMain" layoutX="13.0" layoutY="191.0" prefHeight="606.0" prefWidth="1331.0">
+         <children>
+            <Pane fx:id="Pane1" prefHeight="606.0" prefWidth="1331.0" style="-fx-background-color: rgba(255, 255, 255, 1); -fx-background-radius: 13;" />
+            <ScrollPane prefHeight="590.0" prefWidth="1305.0" stylesheets="@../Style2/ScoralPane.css">
+               <content>
+                  <AnchorPane prefHeight="699.0" prefWidth="1370.0">
+                     <children>
+                        <TableView fx:id="tableProduct" prefHeight="699.0" prefWidth="1370.0" style="-fx-border-color: black;" stylesheets="@../Style2/table.css">
+                          <columns>
+                            <TableColumn fx:id="colId" prefWidth="158.66666793823242" text="Product Id" />
+                            <TableColumn fx:id="colName" prefWidth="179.7333221435547" text="Product Name" />
+                              <TableColumn fx:id="cplQty" prefWidth="138.933349609375" text="Quantity" />
+                              <TableColumn fx:id="colPRice" prefWidth="182.39996337890625" text="Price" />
+                              <TableColumn fx:id="colType" prefWidth="203.99993896484375" text="ProductType" />
+                              <TableColumn fx:id="colDescription" prefWidth="232.79998779296875" text="Description" />
+                              <TableColumn fx:id="colCategory" prefWidth="228.8001708984375" text="Category" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

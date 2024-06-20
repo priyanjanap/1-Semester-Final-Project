@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAncPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutX="197.0" layoutY="-6.0" prefHeight="76.0" prefWidth="1338.0" style="-fx-background-color: rgba(255, 255, 255, 1);">
+         <children>
+            <Pane layoutX="1121.0" layoutY="15.0" prefHeight="54.0" prefWidth="210.0" styleClass="gradient-button" stylesheets="@../Style2/anchorpane1.css">
+               <children>
+                  <JFXButton fx:id="btmLogOut2" layoutX="76.0" layoutY="25.0" onAction="#btmLogOutOnAction" prefHeight="26.0" prefWidth="79.0" styleClass="button-63" stylesheets="@../Style2/button.css" text="Log Out" />
+                  <ImageView fitHeight="54.0" fitWidth="62.0">
+                     <image>
+                        <Image url="@../Style/admin.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="81.0" prefHeight="27.0" prefWidth="84.0" text="Admin">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="lblTime" layoutX="920.0" layoutY="43.0" prefHeight="18.0" prefWidth="84.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="lblDate" layoutX="1000.0" layoutY="43.0" prefHeight="18.0" prefWidth="84.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtSearchBar" alignment="CENTER" layoutX="596.0" layoutY="41.0" prefHeight="26.0" prefWidth="294.0" promptText="search bar" />
+            <Label layoutX="10.0" layoutY="28.0" prefHeight="47.0" prefWidth="598.0" text="Discover your signature style with our fashion-forward clothing line">
+               <font>
+                  <Font name="Bernard MT Condensed" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainAnchorePane" layoutX="202.0" layoutY="69.0" prefHeight="789.0" prefWidth="1334.0" style="-fx-background-color: rgba(241, 241, 241, 1);" stylesheets="@../Style2/dashboard.css" />
+      <AnchorPane layoutX="-8.0" layoutY="-0.39999999999997726" prefHeight="860.0" prefWidth="210.0" stylesheets="@../Style2/anchorpane.css" AnchorPane.bottomAnchor="-9.600000000000023">
+         <children>
+            <Label layoutX="12.0" layoutY="99.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="DASHBOARD">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="152.0" prefHeight="40.0" prefWidth="147.0" style="-fx-text-fill: white;" text="PRODUCT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="203.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="PAYMENT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="257.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="RENTALS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="316.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="ORDERS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="375.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="CUSTOMERS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="432.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="DRESS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="488.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="EMPLOYEE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="542.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="MATERIALS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="597.0" prefHeight="40.0" prefWidth="142.0" style="-fx-text-fill: white;" text="SUPPLIERS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btmDashboard" layoutX="10.0" layoutY="92.0" onAction="#btmDashboardOnAction" prefHeight="47.0" prefWidth="171.0" text=".">
+               <stylesheets>
+                  <URL value="@../Style2/buttonBoarder.css" />
+                  <URL value="@../Style2/button1.1.css" />
+               </stylesheets></JFXButton>
+            <JFXButton fx:id="btmProduct" layoutX="9.0" layoutY="150.0" onAction="#btmProductOnAction" prefHeight="47.0" prefWidth="162.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmPayment" layoutX="10.0" layoutY="200.0" onAction="#btmPaymentOnAction" prefHeight="47.0" prefWidth="152.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmrentals" layoutX="12.0" layoutY="252.0" onAction="#btmrentalsOnAction" prefHeight="47.0" prefWidth="162.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmOrder" layoutX="12.0" layoutY="320.0" onAction="#btmOrdersOnAction" prefHeight="47.0" prefWidth="170.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmCustomer" layoutX="12.0" layoutY="370.0" onAction="#btmCustomerOnAction" prefHeight="47.0" prefWidth="163.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmDress" layoutX="11.0" layoutY="426.0" onAction="#btmDressOnAction" prefHeight="47.0" prefWidth="168.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmEmployee" layoutX="12.0" layoutY="482.0" onAction="#btmEmployeeOnAction" prefHeight="47.0" prefWidth="163.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmMaterial" layoutX="13.0" layoutY="535.0" onAction="#btmMaterialOnAction" prefHeight="47.0" prefWidth="159.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmSupplier" layoutX="13.0" layoutY="594.0" onAction="#btmSupplierOnAction" prefHeight="47.0" prefWidth="166.0" stylesheets="@../Style2/buttonBoarder.css" text="." />
+            <JFXButton fx:id="btmSettingOnAction" alignment="TOP_LEFT" layoutX="12.0" layoutY="644.0" onAction="#btmSettingOnAction" prefHeight="47.0" prefWidth="166.0" stylesheets="@../Style2/buttonBoarder.css" text="Setting" textFill="#f7f2f2">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font></JFXButton>
+            <Circle fill="#e6e9ec" layoutX="52.0" layoutY="41.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label alignment="CENTER" layoutX="113.0" layoutY="44.0" prefHeight="26.0" prefWidth="89.0" text="FASHIONS" textFill="#fffdfd">
+               <font>
+                  <Font name="Baskerville Old Face" size="17.0" />
+               </font>
+            </Label>
+            <Line endX="132.6000213623047" endY="7.62939453125E-6" layoutX="75.0" layoutY="76.0" startX="-64.39996337890625" startY="1.52587890625E-5" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="32.0" layoutY="21.0">
+               <image>
+                  <Image url="@../Style/luxora%20fahsions%201.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="shadowed-element2" />
+            <String fx:value="rounded-anchor-pane1" />
+         </styleClass>
+      </AnchorPane>
+      <Label layoutX="76.0" layoutY="14.0" prefHeight="24.0" prefWidth="90.0" text="LUXORA" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="subAnchorPane3" layoutX="1140.0" layoutY="89.0" prefHeight="154.0" prefWidth="337.0" />
+   </children>
+</AnchorPane>

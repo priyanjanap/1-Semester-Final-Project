@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="799.0" prefWidth="1255.0" style="-fx-background-color: rgba(241, 241, 241, 1);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.EmployeeReportFormController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="16.0" prefHeight="773.0" prefWidth="1230.0" style="-fx-background-color: #81ecec; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" layoutX="367.0" layoutY="6.0" prefHeight="18.0" prefWidth="461.0" style="-fx-background-color: rgba(5, 75, 180, 1); -fx-background-radius: 17;" text="EMPLOYEE REPORTS" textFill="#fcfcfc">
+               <font>
+                  <Font name="Bodoni MT Black" size="30.0" />
+               </font>
+            </Label>
+            <Pane layoutX="21.0" layoutY="65.0" prefHeight="310.0" prefWidth="534.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="19.0" layoutY="64.0" prefHeight="17.0" prefWidth="98.0" text="Employee Name" />
+                  <Label layoutX="21.0" layoutY="123.0" prefHeight="17.0" prefWidth="85.0" text="Employee Age" />
+                  <Label layoutX="19.0" layoutY="154.0" prefHeight="17.0" prefWidth="102.0" text="Contact Number" />
+                  <Label layoutX="19.0" layoutY="93.0" prefHeight="17.0" prefWidth="98.0" text="Employee Address" />
+                  <Label layoutX="19.0" layoutY="184.0" prefHeight="17.0" prefWidth="102.0" text="Date Of Birath" />
+                  <ImageView fx:id="ImageEmployeephoto" fitHeight="215.0" fitWidth="241.0" layoutX="278.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="lblEmployeeNme" layoutX="149.0" layoutY="64.0" prefHeight="17.0" prefWidth="129.0" text="Label" />
+                  <Label fx:id="lblEmpoyeeAddress" layoutX="149.0" layoutY="94.0" prefHeight="17.0" prefWidth="129.0" text="Label" />
+                  <Label fx:id="lblAge" layoutX="149.0" layoutY="124.0" prefHeight="17.0" prefWidth="129.0" text="Label" />
+                  <Label fx:id="lblPhoneNumber" layoutX="149.0" layoutY="154.0" prefHeight="17.0" prefWidth="129.0" text="Label" />
+                  <Label fx:id="lblDob" layoutX="149.0" layoutY="184.0" prefHeight="17.0" prefWidth="129.0" text="Label" />
+                  <Label alignment="CENTER" layoutX="120.0" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #0984e3; -fx-background-radius: 17;" text="Personal Information" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Arial Black" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="672.0" layoutY="244.0" prefHeight="310.0" prefWidth="534.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <BarChart fx:id="attendanceChart" layoutX="22.0" layoutY="29.0" prefHeight="286.0" prefWidth="500.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Label alignment="CENTER" layoutX="94.0" layoutY="1.0" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #0984e3; -fx-background-radius: 17;" text="Attendance Information" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Arial Black" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="22.0" layoutY="414.0" prefHeight="310.0" prefWidth="534.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="20.0" layoutY="72.0" prefHeight="17.0" prefWidth="97.0" text="Employee ID" />
+                  <Label layoutX="20.0" layoutY="104.0" prefHeight="17.0" prefWidth="97.0" text="Salary" />
+                  <Label layoutX="20.0" layoutY="137.0" prefHeight="17.0" prefWidth="97.0" text="JOB ROLL" />
+                  <Label layoutX="22.0" layoutY="177.0" prefHeight="17.0" prefWidth="84.0" text="NIC NUMBER" />
+                  <Label fx:id="lblEmployeeId" layoutX="142.0" layoutY="71.0" text="Label" />
+                  <Label fx:id="lblSalary" layoutX="141.0" layoutY="102.0" text="Label" />
+                  <Label fx:id="lblJobRoll" layoutX="141.0" layoutY="138.0" text="Label" />
+                  <Label fx:id="lblNic" layoutX="141.0" layoutY="176.0" text="Label" />
+                  <ImageView fx:id="ImageEmployeeOR" fitHeight="150.0" fitWidth="200.0" layoutX="273.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="128.0" layoutY="430.0" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #0984e3; -fx-background-radius: 17;" text="Company Infromation" textFill="#fcfcfc">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

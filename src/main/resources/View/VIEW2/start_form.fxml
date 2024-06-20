@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="Stackpane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.StartFormController">
+   <children>
+      <AnchorPane fx:id="MainAnchorPane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="1020.0" fitWidth="1121.0" layoutX="-32.8" layoutY="-168.8" rotate="2.0" AnchorPane.bottomAnchor="-123.0" AnchorPane.leftAnchor="-33.0" AnchorPane.rightAnchor="-52.0" AnchorPane.topAnchor="-169.0">
+               <image>
+                  <Image url="@../../Style/WhatsApp%20Image%202024-05-09%20at%2008.24.40_36c837c6.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btmStart" contentDisplay="BOTTOM" layoutX="371.0" layoutY="552.0" onAction="#btmStartOnAction" prefHeight="70.0" prefWidth="337.0" styleClass="MainAnchorPane" stylesheets="@../../Style2/style.css" text="GET STARTED">
+               <font>
+                  <Font size="26.0" />
+               </font></JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

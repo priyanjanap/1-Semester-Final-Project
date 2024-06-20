@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="742.0" prefWidth="1320.0" stylesheets="@../Style2/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.EmployeeFormController">
+   <children>
+      <Pane fx:id="Pane2" layoutX="7.0" layoutY="215.0" prefHeight="514.0" prefWidth="1306.0" styleClass="pane" stylesheets="@../Style2/dashboard.css">
+         <children>
+            <ScrollPane layoutX="43.0" layoutY="12.0" prefHeight="488.0" prefWidth="1186.0">
+               <content>
+                  <AnchorPane prefHeight="499.0" prefWidth="1184.0">
+                     <children>
+                        <TableView fx:id="tblEmployeeCart" prefHeight="509.0" prefWidth="1179.0" stylesheets="@../Style2/table.css">
+                          <columns>
+                            <TableColumn fx:id="ColEmployeeId" prefWidth="95.20000839233398" text="Employee ID" />
+                              <TableColumn fx:id="colEmployeeName" prefWidth="145.59999084472656" text="Employee Name" />
+                              <TableColumn fx:id="colAdress" prefWidth="145.59999084472656" text="Employee Address" />
+                              <TableColumn fx:id="colEmployeeAge" prefWidth="109.5999755859375" text="Employee Age" />
+                              <TableColumn fx:id="colSalary" prefWidth="127.2000732421875" text="Employee Salary" />
+                              <TableColumn fx:id="colGender" prefWidth="127.2000732421875" text="Employee Gender" />
+                              <TableColumn fx:id="colDateOfBiarth" prefWidth="116.79998779296875" text="Date Of birath" />
+                              <TableColumn fx:id="colConnumber" prefWidth="116.79998779296875" text="Conatct Number" />
+                              <TableColumn fx:id="colEdit" prefWidth="94.4000244140625" text="Edit" />
+                              <TableColumn fx:id="colAction" prefWidth="94.4000244140625" text="Action" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="7.0" layoutY="12.0" prefHeight="175.0" prefWidth="1308.0" styleClass="pane">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="679.0" layoutY="82.0" prefHeight="74.0" prefWidth="302.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 12;" text="TOTAL SALARY THIS MONTH" textFill="#f7efef">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            <Label fx:id="lblSalaryCount" layoutX="81.0" layoutY="116.0" prefHeight="46.0" prefWidth="79.0" textFill="#f2efef">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font></Label>
+            <Label alignment="TOP_CENTER" layoutX="1030.0" layoutY="81.0" prefHeight="74.0" prefWidth="255.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 12;" text="NO OF EMOPLOYEE" textFill="#f4f2f2">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmployeeCount" layoutX="1116.0" layoutY="105.0" prefHeight="46.0" prefWidth="79.0" textFill="#f7f1f1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <JFXButton fx:id="btmAttendance" layoutX="331.0" layoutY="117.0" onAction="#btmAtendnceOnAction" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: rgba(5, 75, 180, 1)/; -fx-background-radius: 12;" text="Employee Atendance" textFill="#faecec">
+               <font>
+                  <Font name="Bodoni MT Black" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btmCharts" layoutX="180.0" layoutY="131.0" onAction="#btmChartsonAction" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: rgba(5, 75, 180, 1)/; -fx-background-radius: 12;" text="Charts" textFill="#f7eeee">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btmAddEmployee" alignment="CENTER" layoutX="505.0" layoutY="129.0" onAction="#btmAddEmployeeOnAction" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: rgba(5, 75, 180, 1)/; -fx-background-radius: 12; -fx-alignment: Arial Black;" text="NEW EMPLOYEE" textFill="#efe6e6">
+         <font>
+            <Font name="Bodoni MT Black" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btmQr" layoutX="31.0" layoutY="131.0" onAction="#btmQrOnAction" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: rgba(5, 75, 180, 1)/; -fx-background-radius: 12;" text="Genarate QR" textFill="#efe9e9">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="806.0" prefWidth="1327.0" style="-fx-background-color: rgba(241, 241, 241, 1);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.DressFormController">
+   <children>
+      <AnchorPane layoutX="16.0" layoutY="9.0" prefHeight="138.0" prefWidth="1288.0" style="-fx-background-color: rgba(255, 255, 255, 1); -fx-background-radius: 10;" />
+      <AnchorPane fx:id="anchorPaneDress" layoutX="24.0" layoutY="162.0" prefHeight="628.0" prefWidth="1288.0" style="-fx-background-color: rgba(255, 255, 255, 1); -fx-background-radius: 10;">
+         <children>
+            <ScrollPane layoutX="10.0" layoutY="17.0" prefHeight="586.0" prefWidth="1259.0" style="-fx-border-color: black;" stylesheets="@../Style2/ScoralPane.css">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="746.0" prefWidth="1430.0" />
+              </content>
+            </ScrollPane>
+            <TableView fx:id="tblViewDesgin" layoutX="11.0" layoutY="19.0" prefHeight="576.0" prefWidth="1255.0" stylesheets="@../Style2/table2.css">
+              <columns>
+                <TableColumn fx:id="colDressId" prefWidth="124.79998397827148" text="Dress ID" />
+                <TableColumn fx:id="colName" prefWidth="129.6000518798828" text="Dress Name" />
+                  <TableColumn fx:id="colDays" prefWidth="129.6000518798828" text="days" />
+                  <TableColumn fx:id="colPaymentPerDay" prefWidth="232.26666259765625" text="Payment Per Date" />
+                  <TableColumn fx:id="colRentalDate" prefWidth="120.5333251953125" text="Renatl Date" />
+                  <TableColumn fx:id="colReturnDate" prefWidth="263.7332763671875" text="Return Date" />
+                  <TableColumn fx:id="colAction" prefWidth="254.39990234375" text="Action" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btmCharts" layoutX="875.0" layoutY="72.0" onAction="#btmChartsOnAction" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: rgba(5, 75, 180, 1)/; -fx-background-radius: 15;" text="CHARTS" textFill="#f7f1f1">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btmViewDesgin" layoutX="1090.0" layoutY="72.0" onAction="#btmViewDesginOnAction" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: rgba(5, 75, 180, 1)/; -fx-background-radius: 15;" text="View Desgin" textFill="#f7f1f1">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btmAddNewDress" layoutX="664.0" layoutY="72.0" onAction="#btmAddNewDressOnAction" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: rgba(5, 75, 180, 1)/; -fx-background-radius: 15;" text="Add New Dress" textFill="#f7f1f1">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

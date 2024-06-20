@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="Stackpane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.SignupFormConroller">
+   <children>
+      <AnchorPane fx:id="MainAnchorPane" prefHeight="700.0" prefWidth="1000.0" stylesheets="@../Style2/button.css">
+         <children>
+            <Label layoutX="163.0" layoutY="10.0" prefHeight="49.0" prefWidth="250.0" styleClass="button-62" text="SIGN UP" textFill="#400dc1">
+               <font>
+                  <Font name="Arial Black" size="47.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName" layoutX="170.0" layoutY="129.0" prefHeight="26.0" prefWidth="295.0" promptText="user Name" />
+            <TextField fx:id="txtNicNumber" layoutX="171.0" layoutY="187.0" prefHeight="26.0" prefWidth="295.0" promptText="Nic Number" />
+            <TextField fx:id="txtEmail" layoutX="170.0" layoutY="249.0" prefHeight="26.0" prefWidth="295.0" promptText="Email " />
+            <PasswordField fx:id="txtPassword" layoutX="168.0" layoutY="323.0" prefHeight="26.0" prefWidth="295.0" promptText="password" />
+            <PasswordField fx:id="txtReTypePassword" layoutX="170.0" layoutY="397.0" prefHeight="26.0" prefWidth="295.0" promptText="re type password" />
+            <Button fx:id="btmSignUp" layoutX="219.0" layoutY="463.0" mnemonicParsing="false" onAction="#btmSignUpOnAction" prefHeight="27.0" prefWidth="150.0" styleClass="gradient-button" text="SIgn up" />
+            <Line endX="295.9333190917969" layoutX="195.0" layoutY="539.0" startX="-171.6893310546875" />
+            <Button fx:id="btmHaveAccount" layoutX="249.0" layoutY="575.0" mnemonicParsing="false" onAction="#BtmHaveAccountOnAction" prefHeight="26.0" prefWidth="173.0" styleClass="button-63" text="ALL ready have Account" />
+            <Label fx:id="lblCheckPassowrd" layoutX="228.0" layoutY="431.0" prefHeight="18.0" prefWidth="141.0" />
+            <Label fx:id="lblEmailSent" layoutX="266.0" layoutY="276.0" prefHeight="18.0" prefWidth="125.0" />
+            <Label layoutX="57.0" layoutY="584.0" prefHeight="18.0" prefWidth="179.0" text="All redayAccount" />
+            <ImageView fitHeight="742.0" fitWidth="572.0" layoutX="500.0" layoutY="-10.0" AnchorPane.bottomAnchor="-31.600000000000023" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="-72.0" AnchorPane.topAnchor="-10.0">
+               <image>
+                  <Image url="@../Style/WhatsApp%20Image%202024-04-28%20at%2020.56.29_159608fe.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblValidUserName" layoutX="264.0" layoutY="158.0" prefHeight="18.0" prefWidth="110.0" textFill="#059918" />
+            <Label layoutX="20.0" layoutY="134.0" prefHeight="22.0" prefWidth="106.0" text="USER NAME">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="186.0" prefHeight="22.0" prefWidth="106.0" text="NIC">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="246.0" prefHeight="22.0" prefWidth="106.0" text="EMIAL">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="325.0" prefHeight="22.0" prefWidth="106.0" text="PASSOWRD">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="405.0" prefHeight="22.0" prefWidth="106.0" text="Re Password">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="94.0" layoutX="58.0" layoutY="14.0">
+               <image>
+                  <Image url="@../Style/luxora%20fahsions%201.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="793.0" prefWidth="1327.0" stylesheets="@../Style2/button1.1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.SuppliersFormController">
+   <children>
+      <Pane layoutX="2.0" layoutY="18.0" prefHeight="171.0" prefWidth="1313.0" style="-fx-background-radius: 15; -fx-background-color: rgba(255, 255, 255, 1);">
+         <children>
+            <JFXButton fx:id="btmUpdate" layoutX="462.0" layoutY="105.0" onAction="#btmUpdateOnAction" prefHeight="46.0" prefWidth="190.0" styleClass="button-63" text="Update">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btmCansel" layoutX="19.0" layoutY="104.0" onAction="#btmCanselOnAction" prefHeight="46.0" prefWidth="190.0" styleClass="button-63" text="Supplier Materials" textFill="#efe5e5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btmCharts" layoutX="241.0" layoutY="106.0" onAction="#btmChartsOnAction" prefHeight="46.0" prefWidth="190.0" styleClass="button-63" text="Charts" textFill="#fcf7f7">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+      <Pane layoutX="9.0" layoutY="213.0" prefHeight="586.0" prefWidth="1306.0" style="-fx-background-color: rgba(255, 255, 255, 1); -fx-background-radius: 12;">
+         <children>
+            <Label layoutX="30.0" layoutY="85.0" prefHeight="40.0" prefWidth="147.0" text="Supplier_ID">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="155.0" prefHeight="40.0" prefWidth="147.0" text="Supplier_Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="225.0" prefHeight="40.0" prefWidth="172.0" text="Supplier_Address">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="295.0" prefHeight="40.0" prefWidth="172.0" text="Contact_Number">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSupplierId" layoutX="252.0" layoutY="92.0" prefHeight="25.0" prefWidth="297.0" />
+            <TextField fx:id="txtSupplierName" layoutX="252.0" layoutY="162.0" prefHeight="25.0" prefWidth="297.0" />
+            <TextField fx:id="txtSupplierAddress" layoutX="252.0" layoutY="232.0" prefHeight="25.0" prefWidth="297.0" />
+            <TextField fx:id="txtTell" layoutX="250.0" layoutY="302.0" prefHeight="25.0" prefWidth="297.0" />
+            <JFXButton fx:id="btmSave" layoutX="316.0" layoutY="388.0" onAction="#btmSaveOnAction" prefHeight="43.0" prefWidth="110.0" style="-fx-background-color: rgba(0, 255, 0, 1); -fx-background-radius: 12;" text="Save" />
+            <Label alignment="CENTER" layoutX="150.0" layoutY="21.0" prefHeight="18.0" prefWidth="306.0" style="-fx-background-color: rgba(5, 75, 180, 1); -fx-background-radius: 12;" text="Suppliers" textFill="#fffbfb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Label>
+            <JFXButton fx:id="btmClear" layoutX="160.0" layoutY="389.0" onAction="#btmClearOnAction" prefHeight="43.0" prefWidth="110.0" style="-fx-background-color: rgba(175, 108, 108, 1); -fx-background-radius: 12;" text="Clear" />
+            <TableView fx:id="tblSupplier" layoutX="601.0" layoutY="6.0" prefHeight="550.0" prefWidth="699.0" style="-fx-border-color: blue;" stylesheets="@../Style2/table.css">
+              <columns>
+                <TableColumn fx:id="colSupplierId" prefWidth="148.26672059297562" text="Supplier_ID" />
+                <TableColumn fx:id="colSupplierName" prefWidth="169.6000518798828" text="Suppiler_name" />
+                  <TableColumn fx:id="colSupplierAddress" prefWidth="213.60003662109375" text="Supplier_Address" />
+                  <TableColumn fx:id="colContactNumber" prefWidth="169.3333740234375" text="contact_number" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Label layoutX="881.0" layoutY="114.0" prefHeight="61.0" prefWidth="252.0" style="-fx-background-color: #001B4B; -fx-background-radius: 14;" text="Number Of Supplier" textFill="#f4f0f0">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierCount" layoutX="1151.0" layoutY="103.0" prefHeight="71.0" prefWidth="98.0" style="-fx-text-fill: #001B4B;">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.MaterialDressFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="235.0" layoutY="27.0" prefHeight="30.0" prefWidth="303.0" style="-fx-background-color: rgba(5, 75, 180, 1); -fx-background-radius: 14;" text=" Material Dress" textFill="#fff5f5">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMaDress" layoutX="17.0" layoutY="145.0" prefHeight="416.0" prefWidth="767.0" stylesheets="@../../Style2/table.css">
+        <columns>
+          <TableColumn fx:id="colId1" prefWidth="131.20001220703125" text="MAterialID" />
+          <TableColumn fx:id="colId2" prefWidth="140.79998779296875" text="DressID" />
+            <TableColumn fx:id="colQty" prefWidth="165.5999755859375" text="QTY" />
+            <TableColumn fx:id="colPrice" prefWidth="163.199951171875" text="Price" />
+            <TableColumn fx:id="colTotal" prefWidth="163.199951171875" text="Total" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+.MainAnchorPane{
+    -fx-background-color: linear-gradient(to right, black, white 50%, black);
+-fx-text-fill: black;
+    -fx-font-weight: bold;
+
+-fx-background-radius: 20px;
+}
+.Ancorpane{
+    -fx-background-color: linear-gradient(rgba(5, 75, 180, 1) 0%, cornflowerblue 100%);
+}
+.Ancorpane2{
+    -fx-background-color: linear-gradient(#007991, #0575e6);
+}
+
+
+
+.Ancorpane3{
+    -fx-background-color: linear-gradient(#00FF5B, #1e55e0);
+}

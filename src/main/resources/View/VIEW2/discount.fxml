@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="672.0" prefWidth="812.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.DiscountFormController">
+   <children>
+      <AnchorPane layoutX="29.0" layoutY="24.0" prefHeight="634.0" prefWidth="752.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="19.0" layoutY="73.0" prefHeight="28.0" prefWidth="74.0" text="Order Id:" />
+            <Label fx:id="lblordertId" layoutX="111.0" layoutY="78.0" />
+            <Label layoutX="520.0" layoutY="78.0" prefHeight="18.0" prefWidth="57.0" text="Date:" />
+            <Label fx:id="LblDate" layoutX="590.0" layoutY="79.0" />
+            <Label layoutX="28.0" layoutY="141.0" text="Customer ID:" />
+            <Label layoutX="494.0" layoutY="141.0" prefHeight="18.0" prefWidth="95.0" text="Customer Name" />
+            <JFXComboBox fx:id="cmbCustomerId" layoutX="146.0" layoutY="137.0" onAction="#cmbCustomerOnAction" prefHeight="26.0" prefWidth="140.0" />
+            <TextField fx:id="txtQty" layoutX="628.0" layoutY="255.0" onAction="#txtQtyOnAction" prefHeight="26.0" prefWidth="69.0" />
+            <Label layoutX="28.0" layoutY="208.0" prefHeight="18.0" prefWidth="69.0" text="Item Id:" />
+            <JFXComboBox fx:id="cmbItem" layoutX="98.0" layoutY="204.0" onAction="#cmbItemOnAction" prefHeight="26.0" prefWidth="140.0" />
+            <Label layoutX="279.0" layoutY="209.0" prefHeight="46.0" prefWidth="82.0" text="Description" />
+            <Label layoutX="425.0" layoutY="210.0" prefHeight="35.0" prefWidth="82.0" text="UnitPrice" />
+            <Label layoutX="528.0" layoutY="218.0" prefHeight="18.0" prefWidth="95.0" text="Qty  on hand " />
+            <Label layoutX="637.0" layoutY="218.0" prefHeight="18.0" prefWidth="51.0" text="Qty" />
+            <Label fx:id="lblCustomerName" layoutX="612.0" layoutY="142.0" prefHeight="18.0" prefWidth="82.0" />
+            <Label fx:id="lblDiscription" layoutX="275.0" layoutY="273.0" prefHeight="18.0" prefWidth="69.0" />
+            <Label fx:id="lblUnitPrice" layoutX="415.0" layoutY="265.0" prefHeight="18.0" prefWidth="74.0" />
+            <Label fx:id="lblQtyOnHand" layoutX="512.0" layoutY="265.0" prefHeight="18.0" prefWidth="82.0" />
+            <TableView fx:id="tblDiscountCart" layoutX="2.0" layoutY="326.0" prefHeight="200.0" prefWidth="752.0" stylesheets="@../../Style2/table2.css">
+              <columns>
+                <TableColumn fx:id="colItemCode" prefWidth="80.80005192756653" text="Code" />
+                <TableColumn fx:id="colItemDiscription" prefWidth="151.19998168945312" text="Decription" />
+                  <TableColumn fx:id="colItemQTY" prefWidth="119.99998474121094" text="QTY" />
+                  <TableColumn fx:id="colUnitprice" prefWidth="95.199951171875" text="UnitPrice" />
+                  <TableColumn fx:id="colDiscount" prefWidth="101.5999755859375" text="Discount" />
+                  <TableColumn fx:id="colTotal" prefWidth="84.7999267578125" text="Total" />
+                  <TableColumn fx:id="colAction" prefWidth="114.4000244140625" text="Action" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="btmBack" layoutX="494.0" layoutY="575.0" onAction="#btmBackOnAction" prefHeight="26.0" prefWidth="95.0" text="Back" />
+            <JFXButton fx:id="btmOrder" layoutX="602.0" layoutY="575.0" onAction="#BtmOrderOnAction" prefHeight="26.0" prefWidth="95.0" text="Placce Order" />
+            <Label layoutX="235.0" layoutY="9.0" prefHeight="46.0" prefWidth="274.0" text="Discount Form">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btmAddToCard" layoutX="611.0" layoutY="291.0" onAction="#btmAddToCardOnAction" prefHeight="26.0" prefWidth="106.0" text="Add To Card" />
+            <Label fx:id="lblTotal" layoutX="28.0" layoutY="567.0" prefHeight="18.0" prefWidth="106.0" text="Label" />
+            <JFXButton fx:id="btmAddNewCustomer" layoutX="310.0" layoutY="146.0" onAction="#btmNewCustomerOnAction" prefHeight="26.0" prefWidth="106.0" text="New Customer" />
+            <Label layoutX="506.0" layoutY="110.0" prefHeight="18.0" prefWidth="95.0" text="Payment Id:" />
+            <Label fx:id="lblPaymentId" layoutX="623.0" layoutY="103.0" prefHeight="26.0" prefWidth="74.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

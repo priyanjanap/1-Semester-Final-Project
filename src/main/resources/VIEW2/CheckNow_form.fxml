@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.CheckNowFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="372.0" layoutY="321.0" stroke="#faf5f5" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf1f5" height="267.0" layoutX="62.0" layoutY="402.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ebec" height="238.0" layoutX="319.0" layoutY="444.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fafbfc" height="216.0" layoutX="716.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="187.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="291.0" layoutY="21.0" stroke="#f2eeee" strokeType="INSIDE" width="490.0" />
+      <Circle fill="#ebedf0" layoutX="503.0" layoutY="224.0" radius="207.0" stroke="#f0e9e9" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="503.0" layoutY="225.0" radius="198.0" stroke="#f7f2f2" strokeType="INSIDE" />
+      <ImageView fitHeight="200.0" fitWidth="510.0" layoutX="463.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Users/PRIYANJANA/Downloads/Stylish%20fashion%20outfit%20for%20men.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="332.0" fitWidth="200.0" layoutX="62.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Users/PRIYANJANA/Downloads/T%20Shirt%20Clothing%20Female%20Fashion%20Women%20Top%20Casual%20Tee%20Flower%20Sweet%20Trend%20Lovely%20Short%20Sleeve%20Printed%20Clothes%20Graphic%20T-shirts%20QLO34253-4XL.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="222.0" fitWidth="261.0" layoutX="389.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Users/PRIYANJANA/Downloads/BROWON%20Jacket%20Men%20Spring%20Autumn%202024%20New%20Mens%20Double%20Sided%20Wear%20Stand%20Collar%20Casual%20Jacket%20Youth%20Trend%20Jacket%20for%20Men%20Clothing%20ArmyGreen%202-XXL%2072_5-80%20KG.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="390.0" fitWidth="187.0" layoutX="716.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Users/PRIYANJANA/Downloads/9%20Men’s%20Style%20Outfits%20Every%20Guy%20Should%20Look%20At%20For%20Inspiration.jpeg" />
+         </image>
+      </ImageView>
+      <Circle fill="#eaebec" layoutX="316.0" layoutY="320.0" radius="48.0" stroke="#ece9e9" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="315.0" layoutY="321.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="284.0" layoutY="290.0" prefHeight="63.0" prefWidth="56.0" rotate="-45.0" text="30 %" textFill="#d70a0a">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="278.0" fitWidth="200.0" layoutX="744.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Users/PRIYANJANA/Downloads/minimalist%20clothing.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="45.0" prefHeight="70.0" prefWidth="246.0" text="New Arrivals ">
+         <font>
+            <Font name="Bernard MT Condensed" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="114.0" prefHeight="94.0" prefWidth="200.0" text="Just For You">
+         <font>
+            <Font name="Bernard MT Condensed" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="324.0" rotate="-47.4" text="OFF ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btmAddToCart" layoutX="728.0" layoutY="636.0" mnemonicParsing="false" onAction="#btmAdddCartOnAction" prefHeight="26.0" prefWidth="109.0" text="ADD TO CART" />
+      <Label layoutX="351.0" layoutY="93.0" prefHeight="43.0" prefWidth="110.0" text="3 Pick up " />
+      <Label layoutX="383.0" layoutY="136.0" prefHeight="34.0" prefWidth="70.0" text="1 Free" />
+   </children>
+</AnchorPane>

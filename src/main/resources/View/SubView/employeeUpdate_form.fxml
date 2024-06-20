@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="619.0" prefWidth="756.0" styleClass="Ancorpane" stylesheets="@../../Style2/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lk.ijse.Dress.Controller.subController.EmployeeUpdateFormController">
+   <children>
+      <AnchorPane layoutX="65.0" layoutY="67.0" prefHeight="459.0" prefWidth="614.0" style="-fx-background-color: rgba(255, 255, 255, 1); -fx-background-radius: 14;">
+         <children>
+            <ComboBox fx:id="cmbEmployeeId" layoutX="74.0" layoutY="122.0" prefHeight="26.0" prefWidth="202.0" />
+            <Label layoutX="74.0" layoutY="95.0" prefHeight="18.0" prefWidth="129.0" text="Employee ID">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="185.0" prefHeight="18.0" prefWidth="129.0" text="Address">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtAddress" layoutX="73.0" layoutY="212.0" prefHeight="26.0" prefWidth="202.0" />
+            <Label layoutX="356.0" layoutY="186.0" prefHeight="18.0" prefWidth="129.0" text="Salary">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtSalary" layoutX="355.0" layoutY="212.0" prefHeight="26.0" prefWidth="202.0" />
+            <Label layoutX="71.0" layoutY="280.0" prefHeight="22.0" prefWidth="142.0" text="Contact_NUmber">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtTell" layoutX="70.0" layoutY="307.0" prefHeight="26.0" prefWidth="202.0" />
+            <Label layoutX="359.0" layoutY="95.0" prefHeight="18.0" prefWidth="129.0" text="Name">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtUserName" layoutX="359.0" layoutY="122.0" prefHeight="26.0" prefWidth="202.0" />
+            <JFXButton fx:id="btmDelete" layoutX="251.0" layoutY="372.0" onAction="#btmDeleteOnAction" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #ff4d4d; -fx-background-radius: 14;" text="Delete" textFill="#eae5e5">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btmUpdate" layoutX="416.0" layoutY="371.0" onAction="#btmUpdateOnAction" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #3ae374; -fx-background-radius: 14;" text="Update" textFill="#ece7e7">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font></JFXButton>
+            <Label alignment="CENTER" layoutX="166.0" layoutY="17.0" prefHeight="34.0" prefWidth="294.0" style="-fx-background-color: rgba(5, 75, 180, 1); -fx-background-radius: 16;" text="EMPLOYEE UPDATE" textFill="#f2f1f1">
+               <font>
+                  <Font name="Bodoni MT" size="27.0" />
+               </font>
+            </Label>
+            <Line endX="503.4000244140625" endY="1.52587890625E-5" layoutX="111.0" layoutY="75.0" startX="-110.99999237060547" startY="1.52587890625E-5" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

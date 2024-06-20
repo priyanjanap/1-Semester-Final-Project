@@ -1,0 +1,49 @@
+.scroll-pane {
+    -fx-background-color: transparent; /* Background color of the scroll pane */
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent; /* Background color of the viewport */
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent; /* Background color of the vertical scroll bar */
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent; /* Background color of the horizontal scroll bar */
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity for the vertical scroll thumb */
+}
+
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity for the vertical scroll thumb */
+}
+
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button,
+.scroll-pane .scroll-bar:horizontal .increment-button,
+.scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent; /* Background color of the scroll buttons */
+    -fx-opacity: 0.5; /* Opacity of the scroll buttons */
+}
+
+.scroll-pane .scroll-bar:vertical .increment-arrow,
+.scroll-pane .scroll-bar:vertical .decrement-arrow,
+.scroll-pane .scroll-bar:horizontal .increment-arrow,
+.scroll-pane .scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: rgba(128, 0, 128, 0.5); /* Color of the scroll arrow */
+}
+
+.scroll-pane .scroll-bar:vertical .track,
+.scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: rgba(128, 0, 128, 0.2); /* Color of the track */
+}
+
+.scroll-pane .scroll-bar:vertical .track-background,
+.scroll-pane .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent; /* Background color of the track */
+}
